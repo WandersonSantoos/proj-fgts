@@ -23,8 +23,8 @@ html {
   --cinza: #4E4B59;
   --preto: #202124;
   --border-shadow: rgba(100, 80, 57, 0.1);
-  --verde: #4FEA52;
-  --verde-hover: #4FEA90;
+  --verde: #2BB741;
+  --verde-hover: #4FEA39;
 
   /*========== Fonte e tipografia ==========*/
   --body-font: 'Poppins', sans-serif;
@@ -193,6 +193,11 @@ html {
   display: flex;
   align-items: center;
   gap: 1rem;
+  transition: .3s;
+}
+
+.a-services:hover {
+  transform: translateY(.25rem);
 }
 
 .a-services span {
@@ -236,7 +241,7 @@ html {
   color: var(--preto);
   font-size: var(--mb-1-15);
   max-width: 554px;
-  margin-bottom: var(--mb-4);
+  margin-bottom: var(--mb-3);
 }
 
 .ul-container {
@@ -290,6 +295,10 @@ html {
   border-bottom: 1px solid var(--border-shadow);
 }
 
+.li-items:last-child {
+  border-bottom: none;
+}
+
 .li-items-child {
   width: 1.75rem;
   height: 1.75rem;
@@ -306,7 +315,7 @@ html {
 
 .container-services-whats {
   background-color: var(--verde);
-  margin: var(--mb-1) auto;
+  margin: auto;
   width: 288px;
   padding: 20px;
   border-radius: 15px;
@@ -318,6 +327,7 @@ html {
 .container-services-whats:hover {
   background-color: var(--verde-hover);
   transition: all ease 0.5s
+
 }
 
 .container-services-whats a {
@@ -348,7 +358,7 @@ html {
 
 @media screen and (max-width: 600px) {
   .cabecalho {
-    height: 60px;
+    height: 80px;
   }
 
   .nav-content {
@@ -357,17 +367,16 @@ html {
   
   .nav-header {
     display: none;
-    width: 20%;
-    height: 60px;
+    height: 80px;
   }
 
   .nav-link {
-    width: 190px;
+    width: 220px;
   }
   
   .nav-antec {
-    height: 60px;
-    font-size: 15px;
+    height: 80px;
+    font-size: 14px;
     padding: 0px 15px;
   }
 
@@ -385,6 +394,14 @@ html {
     width: 300px;
     font-size: 1.45rem;
   }
+
+  .a-services img {
+    width: 12px;
+  }
+
+  .a-services span {
+    font-size: var(--mb-1-15);
+}
 
   .img-woman {
     display: none;
