@@ -104,6 +104,7 @@ html {
 }
 
 .nav-child {
+  height: var(--w-full);
   display: flex;
   flex: 1;
   align-items: center;
@@ -120,8 +121,9 @@ html {
 .nav-antec {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: var(--azul);
-  height: var(--header-height);
+
   z-index: var(--z-tooltip);
 }
 
@@ -344,12 +346,17 @@ html {
 
 /*========== Telas pequenas ==========*/
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 600px) {
   .cabecalho {
     height: 60px;
   }
+
+  .nav-content {
+    padding: 0;
+  }
   
   .nav-header {
+    display: none;
     width: 20%;
     height: 60px;
   }
@@ -361,20 +368,30 @@ html {
   .nav-antec {
     height: 60px;
     font-size: 15px;
-    padding-left: 10px;
+    padding: 0px 15px;
   }
 
   .h1-hero {
     padding-top: 30px;
-    font-size: 47px;
+    font-size: 60px;
   }
 
   .p-hero {
-    font-size: 22px;
+    font-size: 30px;
+    margin-bottom: var(--mb-3);
+  }
+
+  .container-whats {
+    width: 300px;
+    font-size: 1.45rem;
   }
 
   .img-woman {
     display: none;
+  }
+
+  .section-main {
+    height: 700px;
   }
 
   .section-services {
