@@ -111,11 +111,16 @@ html {
   justify-content: space-between;
 }
 
+.logomarca {
+  width: 150px;
+  padding-left: 10px;
+}
+
 .nav-link {
   display: flex;
   align-items: center;
   gap: 2;
-  width: 290px;
+  width: 250px;
 }
 
 .nav-antec {
