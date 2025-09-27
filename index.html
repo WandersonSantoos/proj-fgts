@@ -1,115 +1,22 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+# Landing Page – Antecipe já o seu FGTS (Saque-Aniversário)
 
-    <!--================ Favicon ==============-->
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+Página estática responsiva para captação de leads via **WhatsApp** sobre a antecipação do **FGTS (Saque-Aniversário)**.  
+Construída com **HTML**, **Tailwind CSS (CDN)** e **CSS** próprio.
 
-    <!--================ CDN Tailwind CSS ==============-->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <title>Antecipe já o seu FGTS</title>
+<p align="left">
+  <img alt="HTML5" src="https://img.shields.io/badge/HTML5-0D1117?style=for-the-badge&logo=html5&logoColor=E34F26&labelColor=0D1117">
+  <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind-0D1117?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4&labelColor=0D1117">
+  <img alt="CSS3" src="https://img.shields.io/badge/CSS3-0D1117?style=for-the-badge&logo=css3&logoColor=1572B6&labelColor=0D1117">
+</p>
 
-</head>
-<body>
-    <header class="cabecalho">
-        <div class="nav-header"></div>
-        <div class="nav-content">
-            <div class="nav-child">
-                <a href="https://wandersonsantoos.github.io/wand-portf/" target="_blank" class="nav-link">
-                    <img class="logomarca" src="assets/logo acreditar.png" alt="">
-                </a>
-            </div>
-            <a href="https://wa.me/+5583986712393" target="_blank" class="nav-antec">
-                <span class="span-simple">Antencipar meu FGTS</span>
-            </a>
-        </div>
-    </header>
+---
 
-    <section class="section-main">
-        <div class="section-hero">
-            <div class="section-hero-child">
-                <h1 class="h1-hero">Antecipe com a gente o seu FGTS.</h1>
-                <p class="p-hero">É dinheiro na conta ainda hoje e sem comprometer o seu orçamento.</p>
-                <div class="container-whats">
-                    <a href="https://wa.me/+5583986712393" target="_blank" class="flex items-center gap-2">
-                        <img src="assets/whatsapp.svg" alt="Logo whatsapp"/>
-                        <span>Entrar em contato</span>
-                    </a>
-                </div>
-                <a href="#services" class="a-services">
-                    <img src="assets/arrow-explorer.svg" alt="Seta para baixo"/>
-                    <span >Continue explorando</span>
-                </a>
-            </div>
+## ✨ Visão geral
 
-            <img src="assets/woman.png" alt="Mulher com o celular" class="img-woman"/>
-        </div>
-    </section>
+- **Header fixo** com logomarca e CTA primário para WhatsApp.  
+- **Hero** com título, subtítulo e botão “Entrar em contato”.  
+- **Seção de serviços** explicando **passo a passo** para autorizar a consulta do FGTS (links App Store / Play Store).  
+- **CTA secundário** (“Solicitar antecipação via WhatsApp”).  
+- **Layout responsivo** (Tailwind CDN) + estilos customizados em `styles/style.css`.
 
-    <section class="section-services " >
-        <div class="section-hero">
-            <div class="section-services-child">
-                <span id="services">SERVIÇO EXCLUSIVO</span>
-                <h2>Como contratar o Saque-Aniversário?</h2>
-                <p class="p-services">Veja como é fácil e rápido antencipar seu FGTS seguindo os passos a seguir:</p>
-
-
-                <ul class="ul-container">
-                    <li class="li-container ">
-                        <div class="li-container-child">
-                        <img src="assets/icon-phone.svg" alt="Icone telefone"/>
-                        </div>
-                        <p>Baixe um dos Apps ou acesse o site do FTGS;</p>
-                    </li>
-
-                    <div class="container-stores">
-                        <a href="https://play.google.com/store/apps/details?id=br.gov.caixa.fgts.trabalhador&hl=pt_BR&gl=US" target="_blank" >
-                            <img src="assets/btn-google-play.svg" alt="Logo Play Store"/>
-                        </a>
-                        <a href="https://apps.apple.com/br/app/fgts/id1038441027" target="_blank" class="">
-                            <img src="assets/btn-apple-store.svg" alt="Logo App Store"/>
-                        </a>
-                    </div>
-                    
-                    <li class="li-items">
-                        <div class="li-items-child">
-                            <img class="icon-items" src="assets/icon-options.svg" alt="Icone telefone"/>
-                        </div>
-                        <p>Na tela inicial do app ou site do FGTS clique em "Autorizar banco a consultar seu FGTS";</p>
-                    </li>
-
-                    <li class="li-items">
-                        <div class="li-items-child">
-                        <img class="icon-items" src="assets/icon-solutions.svg" alt="Icone telefone"/>
-                        </div>
-                        <p>Clique na opção "Empréstimo Saque-Aniversário" e depois em "Adicionar instituição”;</p>
-                    </li>
-
-                    <li class="li-items">
-                        <div class="li-items-child">
-                        <img class="icon-items" src="assets/check-circle.svg" alt="Icone telefone"/>
-                        </div>
-                        <p>Procure e selecione todos os bancos disponiveis e clique em "sim" para autorizar a consulta. Por último, confirme a solicitação e entre em contato conosco via WhatsApp</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div>
-            <div class="container-services-whats">
-                <a href="https://wa.me/+5583986712393" target="_blank">
-                    <span>Solicitar antencipação via:</span>
-                    <img src="assets/whatsapp.svg" alt="Logo whatsapp"/>
-                </a>
-            </div>
-        </div>
-
-        <div class="container-phone">
-            <img src="assets/app-fgts.png" alt="Imagem do telefone no app do Itaú" />
-        </div>
-    </section>
-</body>
-</html>
+---
